@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Rental Service</title>
+  <link rel="stylesheet" href="rs.css">
+</head>
+<body>
+  <link rel="stylesheet" href="rs.css">
+  <nav class="navbar">
+    <h1> MOTOHUB</h1>
+
+    <div class="navbar-links">
+        <p class="navbar-link" onclick="navigate('index')"> Home</p>
+        <p class="navbar-link" onclick="navigate('collection')"> Collections</p>
+        <p class="navbar-link" onclick="navigate('contact')"> Contact</p>
+        <p class="navbar-link" onclick="navigate('service')"> Service</p>
+    </div>
+
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
+
+
+  <h1>Bike Rental Service</h1>
+  
+  <div id="services">
+    <h2>Available Services</h2>
+    <ul id="service-list">
+      <li>Basic Tune Up-$5
+      </li>
+      <li>Full Tune Up-$40</li>
+      <li>Flat Tire Up-$50</li>
+      <!-- Service items will be added dynamically via JavaScript -->
+    </ul>
+  </div>
+
+  <div id="booking">
+    <h2>Book a Bike Service</h2>
+    <form id="booking-form">
+      
+      <label for="service">Select Service:</label>
+      <select id="select-state" placeholder="Pick a state...">
+        <option value="AL">Basic Tune up</option>
+        <option value="AK">Full Tune Up</option>
+        <option value="AZ">Flat Tire Up</option>
+        
+      <!--select id="service">
+        
+        <!-- Service options will be added dynamically via JavaScript -->
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  
+  <div class="footers">
+    <div clas="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headingText">MOTOHUB</h2>
+            <p>We at MOTO HUB, focus on automating and improving the process of vehicle service and address the pain points within the user's journey. Just book an appointment with the Website, and then relax, as our pick-up and delivery service, ensures Hassle free service from the comfort of your home/office.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-Instagram" style="color:#ffffff"></i>
+                <i class="fa-brands fa-Twitter"></i>
+                <i class="fa-brands fa-FaceBook"></i>
+            </div>
+        </div>
+    </div>
+    <p>@2024 motohub.com</p>
+</div>
+
+
+
+  <script src="rs.js"></script>
+</body>
+</html>
